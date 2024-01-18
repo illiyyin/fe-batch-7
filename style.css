@@ -1,0 +1,63 @@
+* {
+  scroll-behavior: smooth;
+}
+
+.ken-img {
+  width: 200px;
+  /* transition: all 1s ease; */
+  /* transition: all;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-out;
+  transform-origin: left top; */
+}
+
+@media (max-width:500px) {
+  .ken-img {
+    width: 100px;
+  }
+}
+
+@media (min-width:500px) and (max-width:1000px) {
+  .ken-img {
+    width: 50px;
+  }
+}
+
+
+.ken-img:hover {
+  /* filter: grayscale(0.7);
+  filter: opacity(0);
+  transform: scale(2); */
+}
+
+@keyframes namaAnimasi {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(0.4);
+  }
+
+  50% {
+    transform: scale(0.7);
+    filter: grayscale(1);
+  }
+
+  75% {
+    transform: scale(0.4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.ken-img-2 {
+  scroll-behavior: smooth;
+  margin-top: 200vh;
+  width: 200px;
+  animation-name: namaAnimasi;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}

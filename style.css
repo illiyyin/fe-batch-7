@@ -1,0 +1,93 @@
+.atas{
+  height: 700px;
+  width: 100%;
+  background-color: red;
+  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+  background-size: cover;
+  background-position: right;
+}
+
+.contoh-text{
+  font-size: 60px;
+  /* letter-spacing: 200px;
+  line-height: 200px; */
+text-align:center ;
+}
+.button{
+  margin: 0 auto;
+  /* padding: 8px 20px; */
+  /* padding:10px 15px 20px ; */
+  padding:10px 15px 20px 30px;
+
+  /* padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px; */
+  background-color: rgb(0, 115, 255);
+  color: white;
+  border: unset;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: red;
+  /* margin:0; */
+  font-size: xx-large;
+}
+
+.isi{
+  position: relative;
+}
+.isi-1{
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  color: white;
+  background-color: red;
+}
+.isi-2{
+  z-index: 2;
+  position: absolute;
+  top: 30px;
+  left:30px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  color: white;
+  background-color: blue;
+}
+.isi-3{
+  z-index: 2;
+  position: fixed;
+  top: 30px;
+  left:30px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  color: white;
+  background-color: green;
+}
+
+.parent-box {
+  /* min-width: 500px; */
+ display: flex;
+ gap: 10px;
+ justify-content: center;
+}
+
+@media (max-width:480px) {
+  .parent-box {
+   flex-direction: column;
+   align-items: center;
+  }
+}
+
+.box-1{
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
